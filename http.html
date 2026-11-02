@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOCOLO HTTP</title>
+</head>
+<body>
+    
+     <h1>Protocolo HTTP</h1>
+     <h2>O que é o HTTP?</h2>
+     <p><em>Protocolo de Transferência de Hipertexto é a base
+para toda a troca de dados na internet visual que acessamos pelo navegador.</em></p>
+
+     <h2>HTTP na comunicação entre navegador e servidor</h2>
+     <p>A comunicação tem início pelo navegador quando digitado um endereço, 
+    acesso em um link ou enviado um formulário.</p>
+
+    <h2>Cliente e Servidor</h2>
+    <p><strong>Cliente</strong> é o navegador que envia uma solicitação ao servidor.</p>
+    <p><strong>Servidor</strong> recebe essa solicitação, processa o pedido e envia uma
+resposta ao navegador.</p>
+     
+    <h2>Requisição e Resposta</h2>
+    <p><strong>Requisição</strong> é a mensagem que o navegador envia ao servidor, 
+solicitando alguma informação ou recurso.</p>
+    <p><strong>Resposta</strong> é a mensagem que o servidor devolve ao navegador, 
+informando o resultado da solicitação.</p>
+
+    <h2>Métodos GET e POST</h2>
+    <p><strong>GET</strong> Método utilizado para solicitar informações ao servidor.</p>
+    <p><strong>POST</strong> Método utilizado para enviar dados ao servidor,
+como informações de um formulário.</p>
+
+    <h2>Exemplo de uma requisição HTTP</h2>
+    <h3>Requisição utilizando GET</h3>
+    <pre>
+GET /index.html HTTP/1.1
+Host: www.exemplo.com
+Accept: text/html
+    </pre>
+
+    <h2>Exemplo de uma resposta HTTP</h2>
+    <h3>Resposta do servidor</h3>
+    <pre>
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 125
+
+<html>
+    <body>
+        <h1>Bem-vindo ao site!</h1>
+    </body>
+</html>
+</pre>
+
+    <h2>Códigos de status HTTP</h2>
+
+    <h3>200 OK</h3>
+    <p>Indica que a solicitação foi realizada com sucesso.</p>
+
+    <h3>301 Moved Permanently</h3>
+    <p>Indica que a página foi movida permanentemente para outro endereço.</p>
+
+    <h3>302 Found</h3>
+    <p>Indica que a página está temporariamente em outro endereço.</p>
+
+    <h3>400 Bad Request</h3>
+    <p>Indica que o servidor não conseguiu entender a solicitação enviada 
+pelo cliente.</p>
+
+    <h3>403 Forbidden</h3>
+    <p>Indica que o servidor entendeu a solicitação, mas não permite o 
+acesso ao recurso.</p>
+
+    <h3>404 Not Found</h3>
+    <p>Indica que o recurso solicitado não foi encontrado no servidor.</p>
+
+    <h3>500 Internal Server Error</h3>
+    <p>Indica que ocorreu um erro interno no servidor ao processar a solicitação.</p>
+   
+</body>
+</html>
